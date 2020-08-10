@@ -19,7 +19,6 @@ def make_app():
         short_description = request.headers.get('short_description')
         description = request.headers.get('description')
 
-
         return jsonify({"status": "success"})
 
 
