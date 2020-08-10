@@ -1,4 +1,4 @@
-url = "http://localhost:5000"
+url = "https://studvoicecovid.herokuapp.com/"
 document.querySelector("#problem_form").addEventListener("submit", function(evt) {
     evt.preventDefault();
 
@@ -13,7 +13,7 @@ document.querySelector("#problem_form").addEventListener("submit", function(evt)
     }
 
 
-    fetch(url + "/report_data", {
+    fetch(url + "report_data", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

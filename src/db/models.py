@@ -18,4 +18,5 @@ class Problem(Base):
     id = Column(Integer, primary_key=True, autoincrement = True)
     title = Column(String, nullable=False)
     description = Column(String, nullable=False)
+    score = Column(Integer, nullable = False)
     isChecked = Column(Boolean, nullable=False)
