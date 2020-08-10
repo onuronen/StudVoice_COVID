@@ -20,3 +20,7 @@ class Problem(Base):
     description = Column(String, nullable=False)
     score = Column(Integer, nullable = False)
     isChecked = Column(Boolean, nullable=False)
+
+
+if __name__ == "__main__":
+    pass
