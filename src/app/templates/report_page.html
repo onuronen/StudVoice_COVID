@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <form id="problem_form">
+
+            <div class="form-group">
+                <label for="short_description">Provide a short description of the problem in 1 sentence:</label>
+                <input type="text" class="form-control" id="short_description" placeholder="Enter the short description..."><br/><br/>
+            </div>
+
+            <div class="form-group">
+                <label for="description_text_area">Describe the problem:</label>
+                <textarea class="form-control" id="description_text_area" rows="6"></textarea>
+            </div>
+        
+            <button type="submit" id="submit_problem" class="btn btn-primary"> Submit</button>
+
+        </form>
+
+        <div class="form_error">
+
+        </div>
+        
+        <script src="../static/report.js"></script>
+
+    </body>
+    
+</html>
