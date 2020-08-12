@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+  }
+
+#short_description {
+    margin: auto;
+}
+
+#description_text_area {
+    margin: auto;
+}
+
+#short_desc_text {
+    color: white;
+}
+
+#desc_text {
+    color: white;
+}
+
+.form_error {
+    text-align: center;
+}
+
+#protect_purdue {
+    margin-left: 20%;
+}
+

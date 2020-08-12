@@ -24,7 +24,7 @@ document.querySelector("#problem_form").addEventListener("submit", function(evt)
     .then(response => response.json())
     .then(data => console.log(data));
 
-    document.querySelector(".form_error").innerHTML = "Congrats! Submission succesful";
+    document.querySelector(".form_error").innerHTML = "Congrats! Submission succesful for review";
     document.querySelector("#short_description").value = null;
     document.querySelector("#description_text_area").value = null;
 
