@@ -1,6 +1,9 @@
 import pandas as pd
-from crud import update_table
-from models import Problem
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.db.models import Problem
+from src.db.crud import update_table
 
 def process_ticket(short_description, description):
 
