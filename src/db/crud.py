@@ -21,6 +21,10 @@ def create_tables():
 
 
 def fetch_rows(BaseClass):
+    """
+    :param BaseClass: Base child-class object from /src/db/models.py
+    :returns: pandas.DataFrame
+    """
     session = Session()
 
     try:
@@ -38,11 +42,14 @@ def fetch_rows(BaseClass):
 
 
 def update_table(new_df, BaseClass):
+    """"
+    :param new_df: pandas.DataFrame containing rows to be loaded into Postgres
+    :param BaseClass: Base child-class (sqlalchemy model)
+
+    """""
 
     session = Session()
-    session.bulk_insert_mappings(
-            BaseClass,
-            new_df.to_dict(orient="records"))
+    session.bulk_insert_mappings(BaseClass,new_df.to_dict(orient="records"))
     session.commit()
     session.close()
 
