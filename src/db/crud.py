@@ -8,7 +8,7 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from src.db.models import Problem, Base
-from config import postgres_config
+from src.config import postgres_config
 
 logger = logging.getLogger(__name__)
 conn_str = f"postgresql://{postgres_config['user']}:{postgres_config['password']}@{postgres_config['host']}/{postgres_config['database']}"
@@ -56,3 +56,4 @@ def update_table(new_df, BaseClass):
 
 if __name__ == '__main__':
     pass
+
