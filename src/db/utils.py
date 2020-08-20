@@ -3,7 +3,7 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from src.db.crud import update_table,fetch_rows
-from src.db.models import Problem
+from src.db.models import Problem, Approved_Problem
 
 def process_ticket(short_description, description):
 
@@ -21,7 +21,7 @@ def extract_unchecked_tickets():
     if df.empty:
         return
     
-    df = df.loc[df['isChecked'] == False]
+    df = df[['title','description']]
     df.to_csv('unchecked_problems.csv', index=False)
 
 
@@ -29,4 +29,3 @@ def import_updated_tickets(csv_file):
     df = pd.read_csv(csv_file)
     update_table(df,Approved_Problem)
 
- 
