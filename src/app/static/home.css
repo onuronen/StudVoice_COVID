@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+#title {
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+#description_title {
+    font-size: 34px;
+    color: white;
+    text-align: center;
+}
+
+#description {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#link {
+    font-size: 40px;
+}
+
+#report_page_link {
+    text-align: center;
+}
+
+#protect_purdue_home {
+    margin-left: 25%;
+}
